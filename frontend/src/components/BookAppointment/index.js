@@ -18,7 +18,7 @@ const BookAppointment = () => {
   const navigate = useNavigate();
 
   const getData = async () => {
-    const url = `http://localhost:4000/book/${id}`;
+    const url = `https://bookappointment-89cu.onrender.com/book/${id}`;
     const options = {
       method: "GET",
     };
