@@ -14,7 +14,7 @@ const DoctorProfile = () => {
   const navigate = useNavigate();
 
   const getSingleDoctorInfo = async () => {
-    const url = `http://localhost:4000/doctor/${id}`;
+    const url = `https://bookappointment-89cu.onrender.com/doctor/${id}`;
     const options = {
       method: "GET",
     };
