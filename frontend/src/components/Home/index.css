@@ -1,0 +1,187 @@
+.home-main-container {
+  background-color: lightgray;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.home-sub-container {
+  background-color: rgb(233, 231, 231);
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 4px 16px 0px #bcbcbc;
+  overflow: hidden;
+}
+
+.left-container {
+  width: 30%;
+  min-width: 250px;
+  background-image: url("https://res.cloudinary.com/dzqfuqpu4/image/upload/v1754134916/ChatGPT_Image_Aug_2_2025_05_06_47_PM_xqjvii.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.left-container p {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+}
+
+.right-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.input-search-container {
+  margin-bottom: 20px;
+}
+
+.home-input-search {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: lightgray;
+  width: 100%;
+  font-size: 16px;
+}
+
+.doctors-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.each-doctor-list-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.profile-img-and-name-spec-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.image-container img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name-and-spec-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.doctor-profile-button-container {
+  margin-left: auto;
+}
+
+.doctor-profile-button-container button {
+  background-color: #00c271;
+  color: #ffffff;
+  border: 1px solid #00c271;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.doctor-profile-button-container button:hover {
+  background-color: #00a15e;
+}
+
+.doctor-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.doctor-spec {
+  color: gray;
+  font-size: 15px;
+}
+
+.no-doctor-found-para {
+  text-align: center;
+}
+
+.home-available-para {
+  color: white;
+  font-size: 10px;
+  margin: 5px 0;
+  background-color: green;
+  padding: 5px;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.home-available-para-red {
+  color: white;
+  font-size: 10px;
+  margin: 5px 0;
+  background-color: red;
+  padding: 5px;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .home-sub-container {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .left-container {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+  }
+
+  .right-container {
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .each-doctor-list-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .doctor-profile-button-container {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .doctor-profile-button-container button {
+    width: 100%;
+    padding: 9px 12px;
+  }
+}

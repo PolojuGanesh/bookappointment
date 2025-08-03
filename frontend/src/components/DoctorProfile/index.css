@@ -1,0 +1,147 @@
+.profile-main-container {
+  background-color: lightgray;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profile-sub-container {
+  background-color: rgb(233, 231, 231);
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 4px 16px 0px #bcbcbc;
+  gap: 20px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.profile-doctor-image-container {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.profile-doctor-image-container img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.profile-doctor-info-container {
+  flex: 2 1 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-doctor-info-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.profile-doctor-name {
+  font-size: 24px;
+  color: navy;
+  font-weight: bold;
+}
+
+.spec-para,
+.study-para,
+.time-para,
+.desc-para {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.available-para {
+  color: white;
+  font-size: 16px;
+  margin: 5px 0;
+  background-color: green;
+  padding: 5px;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.available-para-red {
+  color: white;
+  font-size: 16px;
+  margin: 5px 0;
+  background-color: red;
+  padding: 5px;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.horizontal-line {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.profile-book-appointment-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.profile-book-appointment:hover {
+  background-color: #00a15e;
+}
+
+.back-button-to-home {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.profile-book-appointment {
+  background-color: #00c271;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-sub-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .profile-doctor-image-container img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .profile-book-appointment-button-container {
+    justify-content: center;
+  }
+
+  .available-para {
+    width: 50%;
+  }
+
+  .available-para-red {
+    width: 50%;
+  }
+}
