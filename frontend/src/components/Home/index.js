@@ -9,7 +9,7 @@ const LandingPage = () => {
   useEffect(() => {
     const getDoctorsList = async () => {
       try {
-        const response = await fetch("http://localhost:4000/");
+        const response = await fetch("https://bookappointment-89cu.onrender.com");
         const data = await response.json();
         if (response.ok) {
           setDoctorsList(data);
